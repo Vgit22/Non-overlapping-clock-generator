@@ -202,7 +202,9 @@ xi7 gnd! phi net28 net34 vin_inv
 .end
 ```
 ## Conclusion :
-* A non overlapping clock generator for micro scale energy harvesting systems has been presented in this work. The results have been verfified with help of simulations using synopsys custom compiler in 28nm CMOS technology. It is suitable for micro scale energy harvesters generating electrical singnals in range of 0.3 to 0.4 volts.
+* A non overlapping clock generator for micro scale energy harvesting systems has been presented in this work.
+* The results have been verfified with help of simulations using synopsys custom compiler in 28nm CMOS technology.
+* It is suitable for micro scale energy harvesters generating electrical singnals in range of 0.3 to 0.4 volts.
 ## Author :
 Vinod Kumar Yadav, Dept of Electronics Engineering, Govt Girls Polytechnic Gorakhpur.
 ## Acknowledgement :
