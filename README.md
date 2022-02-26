@@ -45,6 +45,8 @@
 * ### Generated waveform :
   ![image](https://user-images.githubusercontent.com/100309086/155736768-6e499039-8efc-4457-a5bf-8f51920fe7dd.png)
   ![image](https://user-images.githubusercontent.com/100309086/155736931-01600b33-b6b2-41c6-8fd2-2eafa261d381.png)
+* ### Area estimate :
+  ![image](https://user-images.githubusercontent.com/100309086/155843234-4e815019-5d70-44d3-ae29-d526f0ed0c2d.png)
 * ### Netlist :
  ```
  *  Generated for: PrimeSim
