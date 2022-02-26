@@ -30,9 +30,9 @@
   ![image](https://user-images.githubusercontent.com/100309086/155558194-5d4f8d0b-811a-446d-a0fd-226c16d47ee3.png)
 * ### Overall circuit implementation :
   ![image](https://user-images.githubusercontent.com/100309086/155733402-75f7ff56-75e5-4b5f-a169-11800b969fa5.png)
-## Generated waveforms from simulations :
 * ### Analog IP of non overlapping clock generator :
   ![image](https://user-images.githubusercontent.com/100309086/155734783-34c462d8-156e-4f23-88e2-21600be7192f.png)
+## Generated waveforms from simulations :
 * ### Simulation schematic :
   ![image](https://user-images.githubusercontent.com/100309086/155734967-7399c6d6-6284-44b4-ac69-4ec4483001be.png)
 * ### Simulation parameters :
@@ -45,7 +45,173 @@
 * ### Generated waveform :
   ![image](https://user-images.githubusercontent.com/100309086/155736768-6e499039-8efc-4457-a5bf-8f51920fe7dd.png)
   ![image](https://user-images.githubusercontent.com/100309086/155736931-01600b33-b6b2-41c6-8fd2-2eafa261d381.png)
+* ### Netlist :
+ ```
+ *  Generated for: PrimeSim
+*  Design library name: vin_lib
+*  Design cell name: nov_clk_gen_tb
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
 
+*Custom Compiler Version S-2021.09
+*Sat Feb 26 10:51:58 2022
+
+.global gnd!
+********************************************************************************
+* Library          : vin_lib
+* Cell             : cs_vco_1
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt cs_vco_1 gnd_1 vdd vctr vo_vco
+xm10 vo_vco net68 net41 vdd p105 w=0.2u l=0.03u nf=2 m=1
+xm9 net68 net64 net37 vdd p105 w=0.2u l=0.03u nf=2 m=1
+xm8 net64 net60 net33 vdd p105 w=0.2u l=0.03u nf=2 m=1
+xm7 net60 net56 net29 vdd p105 w=0.2u l=0.03u nf=2 m=1
+xm6 net56 net65 net25 vdd p105 w=0.2u l=0.03u nf=2 m=1
+xm5 net41 net92 vdd vdd p105 w=0.2u l=0.03u nf=2 m=1
+xm4 net37 net92 vdd vdd p105 w=0.2u l=0.03u nf=2 m=1
+xm3 net33 net92 vdd vdd p105 w=0.2u l=0.03u nf=2 m=1
+xm2 net29 net92 vdd vdd p105 w=0.2u l=0.03u nf=2 m=1
+xm1 net25 net92 vdd vdd p105 w=0.2u l=0.03u nf=2 m=1
+xm0 net92 net92 vdd vdd p105 w=0.2u l=0.03u nf=2 m=1
+xm21 net85 vctr gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm20 net81 vctr gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm19 net77 vctr gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm18 net73 vctr gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm17 net69 vctr gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm16 vo_vco net68 net85 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm15 net68 net64 net81 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm14 net64 net60 net77 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm13 net60 net56 net73 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm12 net56 net65 net69 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm11 net92 vctr gnd_1 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+v27 net65 vo_vco dc=0 pwl ( 0 0.0 '1ns' 1 1.1n 1.2 1.2n 0.0 td=0 )
+.ends cs_vco_1
+
+********************************************************************************
+* Library          : vin_lib
+* Cell             : vin_inv
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt vin_inv gnd_1 in_inv out_inv vdd
+xm0 out_inv in_inv gnd_1 gnd_1 n105 w=0.1u l=30n nf=1 m=1
+xm1 out_inv in_inv vdd vdd p105 w=0.2u l=30n nf=2 m=1
+.ends vin_inv
+
+********************************************************************************
+* Library          : vin_lib
+* Cell             : D_ff
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt d_ff d gnd_1 q q_bar vdd clk_ff
+xm1 net50 net52 net31 gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm0 net48 clk_ff d gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm3 net50 clk_ff net31 vdd p105 w=0.2u l=0.03u nf=2 m=1
+xm2 net48 net52 d vdd p105 w=0.2u l=0.03u nf=2 m=1
+c16 net50 gnd_1 c=0.05f
+c15 net48 gnd_1 c=0.05f
+xi13 gnd_1 q_bar q vdd vin_inv
+xi12 gnd_1 net50 q_bar vdd vin_inv
+xi11 gnd_1 net34 net31 vdd vin_inv
+xi10 gnd_1 net48 net34 vdd vin_inv
+xi14 gnd_1 clk_ff net52 vdd vin_inv
+.ends d_ff
+
+********************************************************************************
+* Library          : vin_lib
+* Cell             : clk_synch
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt clk_synch gnd_1 in_synch vdd phi phi_bar
+xm0 net21 vdd in_synch gnd_1 n105 w=0.1u l=0.03u nf=1 m=1
+xm1 net21 gnd_1 in_synch vdd p105 w=0.2u l=0.03u nf=2 m=1
+xi4 gnd_1 net21 phi_bar vdd vin_inv
+xi3 gnd_1 net16 phi vdd vin_inv
+xi2 gnd_1 in_synch net16 vdd vin_inv
+.ends clk_synch
+
+********************************************************************************
+* Library          : vin_lib
+* Cell             : nov_clk_gen
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt nov_clk_gen gnd_1 vdd vctr phi phi_bar
+xi0 gnd_1 vdd vctr net8 cs_vco_1
+xi2 gnd_1 net12 net18 vdd vin_inv
+xi1 gnd_1 net8 net12 vdd vin_inv
+xi3 net54 gnd_1 net52 net54 vdd net18 d_ff
+xi4 gnd_1 net52 vdd phi phi_bar clk_synch
+.ends nov_clk_gen
+
+********************************************************************************
+* Library          : vin_lib
+* Cell             : nov_clk_gen_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 gnd! net34 net8 phi phi_bar nov_clk_gen
+v6 net8 gnd! dc=0.4
+v1 net34 gnd! dc=1.2
+c5 net33 gnd! c=0.05f
+c4 net25 gnd! c=0.05f
+xi10 gnd! net36 net33 net34 vin_inv
+xi9 gnd! phi_bar net36 net34 vin_inv
+xi8 gnd! net28 net25 net34 vin_inv
+xi7 gnd! phi net28 net34 vin_inv
+
+
+
+
+
+
+
+
+.tran '0.1n' '10n' name=tran
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(phi) v(phi_bar)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
+```
+## Conclusion :
+* A non overlapping clock generator for micro scale energy harvesting systems has been presented in this work. The results have been verfified with help of simulations using synopsys custom compiler in 28nm CMOS technology. It is suitable for micro scale energy harvesters generating electrical singnals in range of 0.3 to 0.4 volts.
+## Author :
+Vinod Kumar Yadav, Dept of Elecronics Engineering, Govt Girls Polytechnic Gorakhpur.
+## Acknowledgement :
+1. Synopsys Company
+2. IIT Hyderabad
+3. VLSI System Design (VSD) Corp. Pvt. Ltd. India
+4. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. India
+5. Chinmaya Panda IIT Hyderabad
+## References :
+* [1] S. Mondal and R. Paily, “Efficient solar power management system for self-powered IoT node,” IEEE Trans. Circuits Syst. I Regul. Pap., vol. 64, no. 9, pp. 2359–2369, 2017, doi:10.1109/TCSI.2017.2707566.
+* [2] M. S. Alam, M. Muqeem, and M. Hasan, “Ultra-low power clock generator for self powered IoT sensor nodes,” in Proceedings - 2019 International Conference on Electrical, Electronics and Computer Engineering, UPCON 2019, 2019, pp. 1–5, doi:10.1109/UPCON47278.2019.8980091.
 
   
 
