@@ -47,6 +47,8 @@
   ![image](https://user-images.githubusercontent.com/100309086/155736931-01600b33-b6b2-41c6-8fd2-2eafa261d381.png)
 * ### Area estimate :
   ![image](https://user-images.githubusercontent.com/100309086/155843234-4e815019-5d70-44d3-ae29-d526f0ed0c2d.png)
+* ### Voltage-frequency characteristics :
+  ![image](https://user-images.githubusercontent.com/100309086/155866883-5f272a01-a99f-4d04-a57d-79be93d8c2b2.png)
 * ### Netlist :
  ```
  *  Generated for: PrimeSim
