@@ -1,4 +1,9 @@
 # Non-overlapping clock generator for micro scale energy harvesting applications in 28nm CMOS technology
+## Content
+* Abstract
+* Circuit details
+* Circuit diagrams
+* Generated waveforms from simulations
 ## Abstract: 
 * This report presents a non overlapping clock generator for micro scale energy harvesting applications. 
 * The clock generator employs a current starved voltage controlled oscillator, D flip flop and clock synchronizer circuit.
