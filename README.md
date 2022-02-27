@@ -223,8 +223,9 @@ Vinod Kumar Yadav, Dept of Electronics Engineering, Govt Girls Polytechnic Gorak
 1. Synopsys Company
 2. IIT Hyderabad
 3. VLSI System Design (VSD) Corp. Pvt. Ltd. India
-4. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. India
-5. Chinmaya Panda IIT Hyderabad
+4. Cloud based Analog IC Design hackathon, IIT Hyderabad
+5. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. India
+6. Chinmaya Panda IIT Hyderabad
 ## References :
 * [1] S. Mondal and R. Paily, “Efficient solar power management system for self-powered IoT node,” IEEE Trans. Circuits Syst. I Regul. Pap., vol. 64, no. 9, pp. 2359–2369, 2017, doi:10.1109/TCSI.2017.2707566.
 * [2] M. S. Alam, M. Muqeem, and M. Hasan, “Ultra-low power clock generator for self powered IoT sensor nodes,” in Proceedings - 2019 International Conference on Electrical, Electronics and Computer Engineering, UPCON 2019, 2019, pp. 1–5, doi:10.1109/UPCON47278.2019.8980091.
