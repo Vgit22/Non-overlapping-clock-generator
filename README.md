@@ -41,8 +41,13 @@
   ![image](https://user-images.githubusercontent.com/100309086/155735526-1aa25ae8-4ecc-4973-bf2b-028f293314bf.png)
   ![image](https://user-images.githubusercontent.com/100309086/155735635-827e80e2-35ba-47d0-a1f2-675ad9d786e6.png)
 * ### Reference waveform :
+  #### Non overlapping clock generator :
   ![image](https://user-images.githubusercontent.com/100309086/155736416-7364c13d-ee99-42b3-b280-61b43604eb81.png)
 * ### Generated waveform :
+  #### Current starved voltage controlled oscillator :
+  ![image](https://user-images.githubusercontent.com/100309086/155869407-267dbccb-53a0-4b51-b637-9f5928f6d137.png)
+  ![image](https://user-images.githubusercontent.com/100309086/155869375-2a6375f0-a076-423a-9335-5da80cda4989.png)
+  #### Non overlapping clock generator :
   ![image](https://user-images.githubusercontent.com/100309086/155736768-6e499039-8efc-4457-a5bf-8f51920fe7dd.png)
   ![image](https://user-images.githubusercontent.com/100309086/155736931-01600b33-b6b2-41c6-8fd2-2eafa261d381.png)
 * ### Area estimate :
