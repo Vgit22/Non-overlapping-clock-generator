@@ -4,6 +4,7 @@
 * Circuit details
 * Circuit diagrams
 * Generated waveforms from simulations
+* Conclusion
 ## Abstract: 
 * This report presents a non overlapping clock generator for micro scale energy harvesting applications. 
 * The clock generator employs a current starved voltage controlled oscillator, D flip flop and clock synchronizer circuit.
