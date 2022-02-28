@@ -20,6 +20,8 @@
 ## Circuit diagrams:
 * ### Block diagram of proposed circuit:
   ![image](https://user-images.githubusercontent.com/100309086/155555117-c5e6e32a-4fc4-4d93-a2ff-bac7dd750e4f.png)
+  
+  Vctr is control voltage , phi and phiB are non overlapping clocks.
 * ### Proposed circuit for current starved voltage controlled oscillator (CS VCO):
   ![image](https://user-images.githubusercontent.com/100309086/155554918-6afbb35c-ff23-43e6-a0a6-6d62aced9d97.png)
 * ### Implemented circuit for CS-VCO:
@@ -59,7 +61,7 @@
 * ### Area estimate :
   ![image](https://user-images.githubusercontent.com/100309086/155843234-4e815019-5d70-44d3-ae29-d526f0ed0c2d.png)
 * ### Voltage-frequency characteristics :
-  ![image](https://user-images.githubusercontent.com/100309086/155866883-5f272a01-a99f-4d04-a57d-79be93d8c2b2.png)
+  ![image](https://user-images.githubusercontent.com/100309086/155982206-8b303891-ef5f-4e50-a36b-434c511728e1.png)
 * ### Netlist :
  ```
  *  Generated for: PrimeSim
@@ -221,10 +223,10 @@ xi7 gnd! phi net28 net34 vin_inv
 ## Author :
 Vinod Kumar Yadav, Dept of Electronics Engineering, Govt Girls Polytechnic Gorakhpur.
 ## Acknowledgement :
-1. Synopsys Company
-2. IIT Hyderabad
-3. VLSI System Design (VSD) Corp. Pvt. Ltd. India
-4. Cloud based Analog IC Design hackathon, IIT Hyderabad
+1. [Synopsys Company](https://www.synopsys.com/)
+2. [IIT Hyderabad](https://iith.ac.in/)
+3. [VLSI System Design (VSD) Corp. Pvt. Ltd. India](https://www.vlsisystemdesign.com/)
+4. [Cloud based Analog IC Design hackathon, IIT Hyderabad](https://hackathoniith.in/)
 5. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. India
 6. Chinmaya Panda IIT Hyderabad
 ## References :
